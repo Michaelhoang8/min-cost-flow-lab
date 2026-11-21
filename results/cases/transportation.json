@@ -1,0 +1,303 @@
+{
+  "certificate": {
+    "kind": "potentials",
+    "potential": {
+      "D1": 0,
+      "D2": 0,
+      "D3": 0,
+      "W1": -2,
+      "W2": -3,
+      "W3": -1,
+      "s": -3,
+      "t": 0
+    }
+  },
+  "counts": {
+    "augmentations": 4,
+    "cancellations": 2,
+    "relaxation_checks": 358
+  },
+  "cycle_budget": 10000,
+  "delivered": 10,
+  "flow": {
+    "D1t": 3,
+    "D2t": 4,
+    "D3t": 3,
+    "W1D1": 0,
+    "W1D2": 4,
+    "W1D3": 0,
+    "W2D1": 3,
+    "W2D2": 0,
+    "W2D3": 0,
+    "W3D1": 0,
+    "W3D2": 0,
+    "W3D3": 3,
+    "sW1": 4,
+    "sW2": 3,
+    "sW3": 3
+  },
+  "format": 1,
+  "objective": 20,
+  "status": "OPTIMAL",
+  "trace": [
+    {
+      "amount": 3,
+      "cost_delta": 27,
+      "delivered": 3,
+      "edges": [
+        {
+          "arc": "sW1",
+          "cost": 0,
+          "direction": 1,
+          "head": "W1",
+          "residual_capacity": 4,
+          "tail": "s"
+        },
+        {
+          "arc": "W1D1",
+          "cost": 9,
+          "direction": 1,
+          "head": "D1",
+          "residual_capacity": 10,
+          "tail": "W1"
+        },
+        {
+          "arc": "D1t",
+          "cost": 0,
+          "direction": 1,
+          "head": "t",
+          "residual_capacity": 3,
+          "tail": "D1"
+        }
+      ],
+      "kind": "AUGMENT",
+      "objective": 27,
+      "step": 1,
+      "unit_cost": 9
+    },
+    {
+      "amount": 1,
+      "cost_delta": 2,
+      "delivered": 4,
+      "edges": [
+        {
+          "arc": "sW1",
+          "cost": 0,
+          "direction": 1,
+          "head": "W1",
+          "residual_capacity": 1,
+          "tail": "s"
+        },
+        {
+          "arc": "W1D2",
+          "cost": 2,
+          "direction": 1,
+          "head": "D2",
+          "residual_capacity": 10,
+          "tail": "W1"
+        },
+        {
+          "arc": "D2t",
+          "cost": 0,
+          "direction": 1,
+          "head": "t",
+          "residual_capacity": 4,
+          "tail": "D2"
+        }
+      ],
+      "kind": "AUGMENT",
+      "objective": 29,
+      "step": 2,
+      "unit_cost": 2
+    },
+    {
+      "amount": 3,
+      "cost_delta": 24,
+      "delivered": 7,
+      "edges": [
+        {
+          "arc": "sW2",
+          "cost": 0,
+          "direction": 1,
+          "head": "W2",
+          "residual_capacity": 3,
+          "tail": "s"
+        },
+        {
+          "arc": "W2D2",
+          "cost": 8,
+          "direction": 1,
+          "head": "D2",
+          "residual_capacity": 10,
+          "tail": "W2"
+        },
+        {
+          "arc": "D2t",
+          "cost": 0,
+          "direction": 1,
+          "head": "t",
+          "residual_capacity": 3,
+          "tail": "D2"
+        }
+      ],
+      "kind": "AUGMENT",
+      "objective": 53,
+      "step": 3,
+      "unit_cost": 8
+    },
+    {
+      "amount": 3,
+      "cost_delta": 3,
+      "delivered": 10,
+      "edges": [
+        {
+          "arc": "sW3",
+          "cost": 0,
+          "direction": 1,
+          "head": "W3",
+          "residual_capacity": 3,
+          "tail": "s"
+        },
+        {
+          "arc": "W3D3",
+          "cost": 1,
+          "direction": 1,
+          "head": "D3",
+          "residual_capacity": 10,
+          "tail": "W3"
+        },
+        {
+          "arc": "D3t",
+          "cost": 0,
+          "direction": 1,
+          "head": "t",
+          "residual_capacity": 3,
+          "tail": "D3"
+        }
+      ],
+      "kind": "AUGMENT",
+      "objective": 56,
+      "step": 4,
+      "unit_cost": 1
+    },
+    {
+      "amount": 3,
+      "cost_delta": -3,
+      "delivered": 10,
+      "edges": [
+        {
+          "arc": "W2D2",
+          "cost": -8,
+          "direction": -1,
+          "head": "W2",
+          "residual_capacity": 3,
+          "tail": "D2"
+        },
+        {
+          "arc": "W2D3",
+          "cost": 4,
+          "direction": 1,
+          "head": "D3",
+          "residual_capacity": 10,
+          "tail": "W2"
+        },
+        {
+          "arc": "W3D3",
+          "cost": -1,
+          "direction": -1,
+          "head": "W3",
+          "residual_capacity": 3,
+          "tail": "D3"
+        },
+        {
+          "arc": "W3D2",
+          "cost": 4,
+          "direction": 1,
+          "head": "D2",
+          "residual_capacity": 10,
+          "tail": "W3"
+        }
+      ],
+      "kind": "CANCEL_CYCLE",
+      "objective": 53,
+      "step": 5,
+      "unit_cost": -1
+    },
+    {
+      "amount": 3,
+      "cost_delta": -33,
+      "delivered": 10,
+      "edges": [
+        {
+          "arc": "W3D3",
+          "cost": 1,
+          "direction": 1,
+          "head": "D3",
+          "residual_capacity": 10,
+          "tail": "W3"
+        },
+        {
+          "arc": "W2D3",
+          "cost": -4,
+          "direction": -1,
+          "head": "W2",
+          "residual_capacity": 3,
+          "tail": "D3"
+        },
+        {
+          "arc": "W2D1",
+          "cost": 3,
+          "direction": 1,
+          "head": "D1",
+          "residual_capacity": 10,
+          "tail": "W2"
+        },
+        {
+          "arc": "W1D1",
+          "cost": -9,
+          "direction": -1,
+          "head": "W1",
+          "residual_capacity": 3,
+          "tail": "D1"
+        },
+        {
+          "arc": "W1D2",
+          "cost": 2,
+          "direction": 1,
+          "head": "D2",
+          "residual_capacity": 9,
+          "tail": "W1"
+        },
+        {
+          "arc": "W3D2",
+          "cost": -4,
+          "direction": -1,
+          "head": "W3",
+          "residual_capacity": 3,
+          "tail": "D2"
+        }
+      ],
+      "kind": "CANCEL_CYCLE",
+      "objective": 20,
+      "step": 6,
+      "unit_cost": -11
+    }
+  ],
+  "verification": {
+    "balances": {
+      "D1": 0,
+      "D2": 0,
+      "D3": 0,
+      "W1": 0,
+      "W2": 0,
+      "W3": 0,
+      "s": 10,
+      "t": -10
+    },
+    "claim": "optimal",
+    "minimum_reduced_cost": 0,
+    "objective": 20,
+    "residual_edges_checked": 18,
+    "valid": true
+  }
+}

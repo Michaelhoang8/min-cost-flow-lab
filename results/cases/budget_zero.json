@@ -1,0 +1,64 @@
+{
+  "certificate": {
+    "kind": "budget",
+    "reason": "negative cycle remains"
+  },
+  "counts": {
+    "augmentations": 1,
+    "cancellations": 0,
+    "relaxation_checks": 16
+  },
+  "cycle_budget": 0,
+  "delivered": 1,
+  "flow": {
+    "at": 1,
+    "bt": 0,
+    "sa": 1,
+    "sb": 0
+  },
+  "format": 1,
+  "objective": 10,
+  "status": "UNKNOWN",
+  "trace": [
+    {
+      "amount": 1,
+      "cost_delta": 10,
+      "delivered": 1,
+      "edges": [
+        {
+          "arc": "sa",
+          "cost": 0,
+          "direction": 1,
+          "head": "a",
+          "residual_capacity": 1,
+          "tail": "s"
+        },
+        {
+          "arc": "at",
+          "cost": 10,
+          "direction": 1,
+          "head": "t",
+          "residual_capacity": 1,
+          "tail": "a"
+        }
+      ],
+      "kind": "AUGMENT",
+      "objective": 10,
+      "step": 1,
+      "unit_cost": 10
+    }
+  ],
+  "verification": {
+    "balances": {
+      "a": 0,
+      "b": 0,
+      "s": 1,
+      "t": -1
+    },
+    "claim": "feasible incumbent only",
+    "minimum_reduced_cost": null,
+    "objective": 10,
+    "residual_edges_checked": 0,
+    "valid": true
+  }
+}

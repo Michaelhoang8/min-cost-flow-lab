@@ -1,0 +1,132 @@
+{
+  "certificate": {
+    "capacity": 4,
+    "kind": "cut",
+    "source_side": [
+      "s",
+      "a",
+      "b"
+    ]
+  },
+  "counts": {
+    "augmentations": 3,
+    "cancellations": 0,
+    "relaxation_checks": 0
+  },
+  "cycle_budget": 10000,
+  "delivered": 4,
+  "flow": {
+    "ab": 1,
+    "at": 1,
+    "bt": 3,
+    "sa": 2,
+    "sb": 2
+  },
+  "format": 1,
+  "objective": 14,
+  "status": "INFEASIBLE",
+  "trace": [
+    {
+      "amount": 1,
+      "cost_delta": 4,
+      "delivered": 1,
+      "edges": [
+        {
+          "arc": "sa",
+          "cost": 1,
+          "direction": 1,
+          "head": "a",
+          "residual_capacity": 3,
+          "tail": "s"
+        },
+        {
+          "arc": "at",
+          "cost": 3,
+          "direction": 1,
+          "head": "t",
+          "residual_capacity": 1,
+          "tail": "a"
+        }
+      ],
+      "kind": "AUGMENT",
+      "objective": 4,
+      "step": 1,
+      "unit_cost": 4
+    },
+    {
+      "amount": 2,
+      "cost_delta": 10,
+      "delivered": 3,
+      "edges": [
+        {
+          "arc": "sb",
+          "cost": 4,
+          "direction": 1,
+          "head": "b",
+          "residual_capacity": 2,
+          "tail": "s"
+        },
+        {
+          "arc": "bt",
+          "cost": 1,
+          "direction": 1,
+          "head": "t",
+          "residual_capacity": 3,
+          "tail": "b"
+        }
+      ],
+      "kind": "AUGMENT",
+      "objective": 14,
+      "step": 2,
+      "unit_cost": 5
+    },
+    {
+      "amount": 1,
+      "cost_delta": 0,
+      "delivered": 4,
+      "edges": [
+        {
+          "arc": "sa",
+          "cost": 1,
+          "direction": 1,
+          "head": "a",
+          "residual_capacity": 2,
+          "tail": "s"
+        },
+        {
+          "arc": "ab",
+          "cost": -2,
+          "direction": 1,
+          "head": "b",
+          "residual_capacity": 2,
+          "tail": "a"
+        },
+        {
+          "arc": "bt",
+          "cost": 1,
+          "direction": 1,
+          "head": "t",
+          "residual_capacity": 1,
+          "tail": "b"
+        }
+      ],
+      "kind": "AUGMENT",
+      "objective": 14,
+      "step": 3,
+      "unit_cost": 0
+    }
+  ],
+  "verification": {
+    "balances": {
+      "a": 0,
+      "b": 0,
+      "s": 4,
+      "t": -4
+    },
+    "claim": "infeasible",
+    "minimum_reduced_cost": null,
+    "objective": 14,
+    "residual_edges_checked": 0,
+    "valid": true
+  }
+}

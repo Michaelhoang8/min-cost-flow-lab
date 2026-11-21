@@ -1,0 +1,15 @@
+test_captured_media_integrity (test_media.MediaChecks.test_captured_media_integrity) ... ok
+test_full_length_negative_cycle_has_closed_form_optimum (test_review.ReviewTests.test_full_length_negative_cycle_has_closed_form_optimum) ... ok
+test_650_seeded_formulas_against_exhaustive_oracle (test_solver.SolverTests.test_650_seeded_formulas_against_exhaustive_oracle) ... ok
+test_budget_boundary_and_optimal_at_zero (test_solver.SolverTests.test_budget_boundary_and_optimal_at_zero) ... ok
+test_certificate_tampering (test_solver.SolverTests.test_certificate_tampering) ... ok
+test_cli_exit_codes_and_invalid_input (test_solver.SolverTests.test_cli_exit_codes_and_invalid_input) ... ok
+test_empty_edges_zero_capacity_and_integer_limits (test_solver.SolverTests.test_empty_edges_zero_capacity_and_integer_limits) ... ok
+test_scenarios_and_exact_known_objectives (test_solver.SolverTests.test_scenarios_and_exact_known_objectives) ... ok
+test_serialization_is_defensive_and_malformed_status_is_rejected (test_solver.SolverTests.test_serialization_is_defensive_and_malformed_status_is_rejected) ... ok
+test_validation_and_roundtrip (test_solver.SolverTests.test_validation_and_roundtrip) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.726s
+
+OK

@@ -1,0 +1,121 @@
+{
+  "certificate": {
+    "kind": "potentials",
+    "potential": {
+      "a": -1,
+      "s": -7,
+      "t": 0
+    }
+  },
+  "counts": {
+    "augmentations": 2,
+    "cancellations": 1,
+    "relaxation_checks": 30
+  },
+  "cycle_budget": 10000,
+  "delivered": 3,
+  "flow": {
+    "as": 0,
+    "at": 3,
+    "sa_cheap": 2,
+    "sa_expensive": 1
+  },
+  "format": 1,
+  "objective": 7,
+  "status": "OPTIMAL",
+  "trace": [
+    {
+      "amount": 2,
+      "cost_delta": 14,
+      "delivered": 2,
+      "edges": [
+        {
+          "arc": "sa_expensive",
+          "cost": 6,
+          "direction": 1,
+          "head": "a",
+          "residual_capacity": 2,
+          "tail": "s"
+        },
+        {
+          "arc": "at",
+          "cost": 1,
+          "direction": 1,
+          "head": "t",
+          "residual_capacity": 3,
+          "tail": "a"
+        }
+      ],
+      "kind": "AUGMENT",
+      "objective": 14,
+      "step": 1,
+      "unit_cost": 7
+    },
+    {
+      "amount": 1,
+      "cost_delta": 0,
+      "delivered": 3,
+      "edges": [
+        {
+          "arc": "sa_cheap",
+          "cost": -1,
+          "direction": 1,
+          "head": "a",
+          "residual_capacity": 2,
+          "tail": "s"
+        },
+        {
+          "arc": "at",
+          "cost": 1,
+          "direction": 1,
+          "head": "t",
+          "residual_capacity": 1,
+          "tail": "a"
+        }
+      ],
+      "kind": "AUGMENT",
+      "objective": 14,
+      "step": 2,
+      "unit_cost": 0
+    },
+    {
+      "amount": 1,
+      "cost_delta": -7,
+      "delivered": 3,
+      "edges": [
+        {
+          "arc": "sa_cheap",
+          "cost": -1,
+          "direction": 1,
+          "head": "a",
+          "residual_capacity": 1,
+          "tail": "s"
+        },
+        {
+          "arc": "sa_expensive",
+          "cost": -6,
+          "direction": -1,
+          "head": "s",
+          "residual_capacity": 2,
+          "tail": "a"
+        }
+      ],
+      "kind": "CANCEL_CYCLE",
+      "objective": 7,
+      "step": 3,
+      "unit_cost": -7
+    }
+  ],
+  "verification": {
+    "balances": {
+      "a": 0,
+      "s": 3,
+      "t": -3
+    },
+    "claim": "optimal",
+    "minimum_reduced_cost": 0,
+    "objective": 7,
+    "residual_edges_checked": 5,
+    "valid": true
+  }
+}

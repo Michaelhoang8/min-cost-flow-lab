@@ -1,0 +1,112 @@
+{
+  "certificate": {
+    "kind": "potentials",
+    "potential": {
+      "a": -1,
+      "b": -1,
+      "s": -1,
+      "t": 0
+    }
+  },
+  "counts": {
+    "augmentations": 1,
+    "cancellations": 1,
+    "relaxation_checks": 32
+  },
+  "cycle_budget": 10000,
+  "delivered": 1,
+  "flow": {
+    "at": 0,
+    "bt": 1,
+    "sa": 0,
+    "sb": 1
+  },
+  "format": 1,
+  "objective": 1,
+  "status": "OPTIMAL",
+  "trace": [
+    {
+      "amount": 1,
+      "cost_delta": 10,
+      "delivered": 1,
+      "edges": [
+        {
+          "arc": "sa",
+          "cost": 0,
+          "direction": 1,
+          "head": "a",
+          "residual_capacity": 1,
+          "tail": "s"
+        },
+        {
+          "arc": "at",
+          "cost": 10,
+          "direction": 1,
+          "head": "t",
+          "residual_capacity": 1,
+          "tail": "a"
+        }
+      ],
+      "kind": "AUGMENT",
+      "objective": 10,
+      "step": 1,
+      "unit_cost": 10
+    },
+    {
+      "amount": 1,
+      "cost_delta": -9,
+      "delivered": 1,
+      "edges": [
+        {
+          "arc": "at",
+          "cost": -10,
+          "direction": -1,
+          "head": "a",
+          "residual_capacity": 1,
+          "tail": "t"
+        },
+        {
+          "arc": "sa",
+          "cost": 0,
+          "direction": -1,
+          "head": "s",
+          "residual_capacity": 1,
+          "tail": "a"
+        },
+        {
+          "arc": "sb",
+          "cost": 0,
+          "direction": 1,
+          "head": "b",
+          "residual_capacity": 1,
+          "tail": "s"
+        },
+        {
+          "arc": "bt",
+          "cost": 1,
+          "direction": 1,
+          "head": "t",
+          "residual_capacity": 1,
+          "tail": "b"
+        }
+      ],
+      "kind": "CANCEL_CYCLE",
+      "objective": 1,
+      "step": 2,
+      "unit_cost": -9
+    }
+  ],
+  "verification": {
+    "balances": {
+      "a": 0,
+      "b": 0,
+      "s": 1,
+      "t": -1
+    },
+    "claim": "optimal",
+    "minimum_reduced_cost": 0,
+    "objective": 1,
+    "residual_edges_checked": 4,
+    "valid": true
+  }
+}

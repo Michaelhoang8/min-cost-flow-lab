@@ -1,0 +1,44 @@
+{
+  "captured_at_utc": "2026-11-21T01:24:12.217896+00:00",
+  "source": "Actual browser rendering of docs/report.html",
+  "recording": "Continuous automated browser review; not manual development footage",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "page_title": "Min-cost flow \u00b7 algorithm study",
+  "report_sha256_normalized_text": "f955e1cc32ede486b068d5658bf0ab497b43894afcde909a30f2cc8296cae75c",
+  "video_sha256": "44035548a9454522fb50c6113060d23cd1efdf07e9f256b0206e6836ab19922d",
+  "captures": [
+    {
+      "path": "docs/screenshots/01_overview.png",
+      "section": "overview",
+      "sha256": "faa9188e68a5f058a1bc1f28f40a0d447d7b9ca1165a496eec6e48e8d91008c2"
+    },
+    {
+      "path": "docs/screenshots/02_rerouting.png",
+      "section": "rerouting",
+      "sha256": "0dd05d9902a5b59e48f61847ea14d662821d6a2601b094692cb5ee90284471b7"
+    },
+    {
+      "path": "docs/screenshots/03_allocation.png",
+      "section": "allocation",
+      "sha256": "d00118dd7e24eb1d3af1a072dc3bd41759ea230d9e6710a983078e880c225dd1"
+    },
+    {
+      "path": "docs/screenshots/04_certificates.png",
+      "section": "certificates",
+      "sha256": "a8ada44a0efd44156c05fcd07ad6c994ec9fe7bd00f2a86ed34587615032b75b"
+    },
+    {
+      "path": "docs/screenshots/05_feasibility.png",
+      "section": "feasibility",
+      "sha256": "58f164b7c2969f3fb9e1e96e812dd0f9c6695ca369a053226e120522babbc2b4"
+    },
+    {
+      "path": "docs/screenshots/06_validation.png",
+      "section": "validation",
+      "sha256": "62d5eb588b30d5cde8dfb23730f60336bc61f4be5a2bd4afc42f814e1e600060"
+    }
+  ]
+}

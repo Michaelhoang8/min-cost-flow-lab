@@ -1,0 +1,41 @@
+{
+  "arcs": [
+    {
+      "capacity": 2,
+      "cost": 6,
+      "head": "a",
+      "id": "sa_expensive",
+      "tail": "s"
+    },
+    {
+      "capacity": 2,
+      "cost": -1,
+      "head": "a",
+      "id": "sa_cheap",
+      "tail": "s"
+    },
+    {
+      "capacity": 1,
+      "cost": 2,
+      "head": "s",
+      "id": "as",
+      "tail": "a"
+    },
+    {
+      "capacity": 3,
+      "cost": 1,
+      "head": "t",
+      "id": "at",
+      "tail": "a"
+    }
+  ],
+  "format": 1,
+  "nodes": [
+    "s",
+    "a",
+    "t"
+  ],
+  "required": 3,
+  "sink": "t",
+  "source": "s"
+}

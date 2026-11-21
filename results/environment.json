@@ -1,0 +1,20 @@
+{
+  "command": "python scripts/run_study.py --samples 25 --oracle-cases 120",
+  "oracle": {
+    "assignments": 5000,
+    "cases": 120,
+    "seed": 660274
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "python": "3.13.17 (tags/v3.13.17:64e080d, Oct 21 2026, 14:08:53) [MSC v.1944 64 bit (AMD64)]",
+  "recorded_utc": "2026-11-21T01:23:40.275369+00:00",
+  "timing": {
+    "claim": "local micro-duration observations; no production or cross-machine performance claim",
+    "clock": "time.perf_counter_ns",
+    "order_seed": 51029,
+    "samples_per_case": 25,
+    "scope": "solve only; includes trace construction, excludes parsing, serialization and verification",
+    "untimed_warmups_per_case": 3
+  }
+}

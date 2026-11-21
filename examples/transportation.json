@@ -1,0 +1,123 @@
+{
+  "arcs": [
+    {
+      "capacity": 4,
+      "cost": 0,
+      "head": "W1",
+      "id": "sW1",
+      "tail": "s"
+    },
+    {
+      "capacity": 3,
+      "cost": 0,
+      "head": "W2",
+      "id": "sW2",
+      "tail": "s"
+    },
+    {
+      "capacity": 3,
+      "cost": 0,
+      "head": "W3",
+      "id": "sW3",
+      "tail": "s"
+    },
+    {
+      "capacity": 10,
+      "cost": 9,
+      "head": "D1",
+      "id": "W1D1",
+      "tail": "W1"
+    },
+    {
+      "capacity": 10,
+      "cost": 2,
+      "head": "D2",
+      "id": "W1D2",
+      "tail": "W1"
+    },
+    {
+      "capacity": 10,
+      "cost": 5,
+      "head": "D3",
+      "id": "W1D3",
+      "tail": "W1"
+    },
+    {
+      "capacity": 10,
+      "cost": 3,
+      "head": "D1",
+      "id": "W2D1",
+      "tail": "W2"
+    },
+    {
+      "capacity": 10,
+      "cost": 8,
+      "head": "D2",
+      "id": "W2D2",
+      "tail": "W2"
+    },
+    {
+      "capacity": 10,
+      "cost": 4,
+      "head": "D3",
+      "id": "W2D3",
+      "tail": "W2"
+    },
+    {
+      "capacity": 10,
+      "cost": 6,
+      "head": "D1",
+      "id": "W3D1",
+      "tail": "W3"
+    },
+    {
+      "capacity": 10,
+      "cost": 4,
+      "head": "D2",
+      "id": "W3D2",
+      "tail": "W3"
+    },
+    {
+      "capacity": 10,
+      "cost": 1,
+      "head": "D3",
+      "id": "W3D3",
+      "tail": "W3"
+    },
+    {
+      "capacity": 3,
+      "cost": 0,
+      "head": "t",
+      "id": "D1t",
+      "tail": "D1"
+    },
+    {
+      "capacity": 4,
+      "cost": 0,
+      "head": "t",
+      "id": "D2t",
+      "tail": "D2"
+    },
+    {
+      "capacity": 3,
+      "cost": 0,
+      "head": "t",
+      "id": "D3t",
+      "tail": "D3"
+    }
+  ],
+  "format": 1,
+  "nodes": [
+    "s",
+    "W1",
+    "W2",
+    "W3",
+    "D1",
+    "D2",
+    "D3",
+    "t"
+  ],
+  "required": 10,
+  "sink": "t",
+  "source": "s"
+}

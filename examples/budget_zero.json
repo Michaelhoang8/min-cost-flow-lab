@@ -1,0 +1,42 @@
+{
+  "arcs": [
+    {
+      "capacity": 1,
+      "cost": 0,
+      "head": "a",
+      "id": "sa",
+      "tail": "s"
+    },
+    {
+      "capacity": 1,
+      "cost": 10,
+      "head": "t",
+      "id": "at",
+      "tail": "a"
+    },
+    {
+      "capacity": 1,
+      "cost": 0,
+      "head": "b",
+      "id": "sb",
+      "tail": "s"
+    },
+    {
+      "capacity": 1,
+      "cost": 1,
+      "head": "t",
+      "id": "bt",
+      "tail": "b"
+    }
+  ],
+  "format": 1,
+  "nodes": [
+    "s",
+    "a",
+    "b",
+    "t"
+  ],
+  "required": 1,
+  "sink": "t",
+  "source": "s"
+}

@@ -1,0 +1,87 @@
+{
+  "certificate": {
+    "kind": "potentials",
+    "potential": {
+      "s": -3,
+      "t": 0,
+      "x": 0,
+      "y": -1
+    }
+  },
+  "counts": {
+    "augmentations": 1,
+    "cancellations": 1,
+    "relaxation_checks": 18
+  },
+  "cycle_budget": 10000,
+  "delivered": 2,
+  "flow": {
+    "st": 2,
+    "xy": 2,
+    "yx": 2
+  },
+  "format": 1,
+  "objective": 0,
+  "status": "OPTIMAL",
+  "trace": [
+    {
+      "amount": 2,
+      "cost_delta": 6,
+      "delivered": 2,
+      "edges": [
+        {
+          "arc": "st",
+          "cost": 3,
+          "direction": 1,
+          "head": "t",
+          "residual_capacity": 2,
+          "tail": "s"
+        }
+      ],
+      "kind": "AUGMENT",
+      "objective": 6,
+      "step": 1,
+      "unit_cost": 3
+    },
+    {
+      "amount": 2,
+      "cost_delta": -6,
+      "delivered": 2,
+      "edges": [
+        {
+          "arc": "xy",
+          "cost": -4,
+          "direction": 1,
+          "head": "y",
+          "residual_capacity": 2,
+          "tail": "x"
+        },
+        {
+          "arc": "yx",
+          "cost": 1,
+          "direction": 1,
+          "head": "x",
+          "residual_capacity": 2,
+          "tail": "y"
+        }
+      ],
+      "kind": "CANCEL_CYCLE",
+      "objective": 0,
+      "step": 2,
+      "unit_cost": -3
+    }
+  ],
+  "verification": {
+    "balances": {
+      "s": 2,
+      "t": -2,
+      "x": 0,
+      "y": 0
+    },
+    "claim": "optimal",
+    "minimum_reduced_cost": 0,
+    "objective": 0,
+    "residual_edges_checked": 3,
+    "valid": true
+  }
+}

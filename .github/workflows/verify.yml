@@ -1,0 +1,24 @@
+name: Verify flow certificates and reproduce
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  study:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Verify preserved evidence
+        run: python scripts/verify_results.py
+      - name: Run tests and a fresh study
+        run: python scripts/run_study.py --output-dir build/ci --samples 5 --oracle-cases 40
+      - name: Verify new evidence and CLI
+        run: |
+          python scripts/verify_results.py --output-dir build/ci
+          python -m flowlab examples/transportation.json --output build/cli.json
+          python -m flowlab examples/transportation.json --verify build/cli.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reproduced-flow-study
+          path: build/ci

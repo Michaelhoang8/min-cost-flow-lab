@@ -1,0 +1,90 @@
+[
+  {
+    "augmentations": 1,
+    "cancellations": 1,
+    "delivered": 1,
+    "description": "One unit moves from the initial expensive path to a cheaper path through reverse residual arcs.",
+    "objective": 1,
+    "relaxation_checks": 32,
+    "required": 1,
+    "scenario": "reverse_rerouting",
+    "status": "OPTIMAL"
+  },
+  {
+    "augmentations": 3,
+    "cancellations": 1,
+    "delivered": 4,
+    "description": "Four required units saturate the two sink arcs; a negative-cost intermediate arc improves allocation.",
+    "objective": 9,
+    "relaxation_checks": 46,
+    "required": 4,
+    "scenario": "bottleneck",
+    "status": "OPTIMAL"
+  },
+  {
+    "augmentations": 3,
+    "cancellations": 0,
+    "delivered": 4,
+    "description": "The requested five units exceed a cut of capacity four.",
+    "objective": 14,
+    "relaxation_checks": 0,
+    "required": 5,
+    "scenario": "infeasible_cut",
+    "status": "INFEASIBLE"
+  },
+  {
+    "augmentations": 4,
+    "cancellations": 2,
+    "delivered": 10,
+    "description": "Ten units allocated between three warehouses and three demand nodes, with integer unit costs.",
+    "objective": 20,
+    "relaxation_checks": 358,
+    "required": 10,
+    "scenario": "transportation",
+    "status": "OPTIMAL"
+  },
+  {
+    "augmentations": 1,
+    "cancellations": 1,
+    "delivered": 2,
+    "description": "A bounded negative-cost circulation changes the objective outside the source component.",
+    "objective": 0,
+    "relaxation_checks": 18,
+    "required": 2,
+    "scenario": "disconnected_circulation",
+    "status": "OPTIMAL"
+  },
+  {
+    "augmentations": 2,
+    "cancellations": 1,
+    "delivered": 3,
+    "description": "Parallel and antiparallel original arcs retain separate identities.",
+    "objective": 7,
+    "relaxation_checks": 30,
+    "required": 3,
+    "scenario": "parallel_arcs",
+    "status": "OPTIMAL"
+  },
+  {
+    "augmentations": 1,
+    "cancellations": 0,
+    "delivered": 1,
+    "description": "A feasible cost-ten incumbent is returned UNKNOWN because a negative cycle remains.",
+    "objective": 10,
+    "relaxation_checks": 16,
+    "required": 1,
+    "scenario": "budget_zero",
+    "status": "UNKNOWN"
+  },
+  {
+    "augmentations": 0,
+    "cancellations": 1,
+    "delivered": 0,
+    "description": "Zero required transfer still permits a beneficial bounded circulation.",
+    "objective": -6,
+    "relaxation_checks": 18,
+    "required": 0,
+    "scenario": "zero_required",
+    "status": "OPTIMAL"
+  }
+]

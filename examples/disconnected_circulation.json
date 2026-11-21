@@ -1,0 +1,35 @@
+{
+  "arcs": [
+    {
+      "capacity": 2,
+      "cost": 3,
+      "head": "t",
+      "id": "st",
+      "tail": "s"
+    },
+    {
+      "capacity": 2,
+      "cost": -4,
+      "head": "y",
+      "id": "xy",
+      "tail": "x"
+    },
+    {
+      "capacity": 2,
+      "cost": 1,
+      "head": "x",
+      "id": "yx",
+      "tail": "y"
+    }
+  ],
+  "format": 1,
+  "nodes": [
+    "s",
+    "t",
+    "x",
+    "y"
+  ],
+  "required": 2,
+  "sink": "t",
+  "source": "s"
+}
