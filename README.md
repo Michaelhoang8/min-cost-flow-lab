@@ -1,5 +1,7 @@
 # Min-cost flow lab
 
+**[View the report in your browser](https://Michaelhoang8.github.io/min-cost-flow-lab/)**
+
 An exact integer flow solver with an independently checkable result: capacity and flow conservation checks, residual-potential optimality certificates, and capacity-cut infeasibility certificates. It implements its own breadth-first feasibility search and Bellman–Ford negative-cycle cancellation in Python's standard library.
 
 The repository contains source, executable tests, synthetic networks, actual solve traces, a preserved exhaustive-oracle corpus, and a generated [technical report](docs/report.html). This is an AI-assisted engineering exercise; datasets and scenarios are synthetic.
